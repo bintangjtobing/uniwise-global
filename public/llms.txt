@@ -1,0 +1,56 @@
+# Uniwise Global Solutions Sdn. Bhd.
+# https://www.uniwiseglobal.com
+
+> Uniwise Global Solutions Sdn. Bhd. is a Malaysia-based business support company specializing in customer service center operations, office administrative support, and IT service management.
+
+## Company Overview
+
+- Company Name: Uniwise Global Solutions Sdn. Bhd.
+- Location: Kuala Lumpur, Malaysia
+- Industry: Business Process Outsourcing (BPO), Customer Service, IT Services
+- Website: https://www.uniwiseglobal.com
+
+## Core Services
+
+1. Customer Service Center Operations (MSIC 82110)
+   - Inbound and outbound call handling
+   - Live chat support
+   - Email and ticket management
+   - Complaint resolution
+   - After-sales support
+
+2. Office Administrative Support (MSIC 8299)
+   - Data entry and processing
+   - Document management
+   - Scheduling and calendar management
+   - Records and filing
+   - Report preparation
+
+3. IT Service and Technical Support (MSIC 6209)
+   - Help desk support (Tier 1 and Tier 2)
+   - Technical troubleshooting
+   - System monitoring and alerts
+   - Software installation and configuration
+   - User account management
+   - IT asset tracking
+
+## Key Differentiators
+
+- Trained dedicated teams (not generic scripts)
+- Scalable support (scale up or down without fixed costs)
+- Full operational transparency (real-time dashboards and reports)
+- Average onboarding time: 2 weeks
+- 24/7 customer service center for active clients
+
+## Contact
+
+- Email: info@uniwiseglobal.com
+- Location: Kuala Lumpur, Malaysia
+
+## For full details see
+
+- Full LLMs document: https://www.uniwiseglobal.com/llms-full.txt
+- Website: https://www.uniwiseglobal.com
+- Services: https://www.uniwiseglobal.com/services
+- About: https://www.uniwiseglobal.com/about
+- Contact: https://www.uniwiseglobal.com/contact

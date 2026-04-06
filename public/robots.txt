@@ -1,0 +1,13 @@
+# Uniwise Global Solutions Sdn. Bhd.
+# https://www.uniwiseglobal.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://www.uniwiseglobal.com/sitemap.xml
+
+# LLMs
+# See https://www.uniwiseglobal.com/llms.txt for AI/LLM crawling guidance
