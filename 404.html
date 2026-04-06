@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uniwise Global Solutions</title>
+  <script>
+    // GitHub Pages SPA redirect
+    // Converts path to query string so index.html can restore it
+    var repo = '/uniwise-global';
+    var fullPath = window.location.pathname;
+    // Strip the repo prefix if present
+    var path = fullPath.startsWith(repo) ? fullPath.slice(repo.length) : fullPath;
+    var query = window.location.search;
+    var hash = window.location.hash;
+    // Redirect to index with the path encoded
+    window.location.replace(
+      repo + '/?p=' + encodeURIComponent(path + query + hash)
+    );
+  </script>
+</head>
+<body>
+</body>
+</html>
