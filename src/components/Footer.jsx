@@ -36,8 +36,7 @@ export default function Footer() {
           <div className="footer__col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="mailto:info@uniwiseglobal.com" title="Email Uniwise Global Solutions">info@uniwiseglobal.com</a></li>
-              <li><a href="tel:+60000000000" title="Call Uniwise Global Solutions">+60 00-000 0000</a></li>
+              <li><a href="mailto:leebinglin2@gmail.com" title="Email Uniwise Global Solutions">leebinglin2@gmail.com</a></li>
               <li><span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem' }}>Kuala Lumpur, Malaysia</span></li>
             </ul>
           </div>

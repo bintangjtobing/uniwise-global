@@ -108,7 +108,7 @@ export const organizationSchema = {
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer service',
-    email: 'info@uniwiseglobal.com',
+    email: 'leebinglin2@gmail.com',
     availableLanguage: ['English', 'Malay'],
   },
   sameAs: [],
@@ -125,7 +125,7 @@ export const localBusinessSchema = {
   image: `${SITE_URL}/assets/images/logo-light.png`,
   url: SITE_URL,
   telephone: '+60-00-000-0000',
-  email: 'info@uniwiseglobal.com',
+  email: 'leebinglin2@gmail.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Kuala Lumpur',

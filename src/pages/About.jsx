@@ -48,7 +48,10 @@ export default function About() {
                 <p>We built Uniwise to solve this problem. We recruit, train, and manage dedicated customer service teams that work exclusively for your business. Your customers never know they are talking to an external team because our agents represent your brand, not ours.</p>
               </div>
               <div className="two-col__image">
-                <span>Company Story Photo (720 x 540)</span>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/images/company-photo.png`}
+                  alt="Uniwise Global Solutions team collaborating"
+                />
               </div>
             </div>
           </FadeUp>

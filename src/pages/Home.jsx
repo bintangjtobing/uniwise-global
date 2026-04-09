@@ -35,6 +35,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="hero__wave">
+          <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="var(--color-white)" />
+          </svg>
+        </div>
       </section>
 
       {/* COMPANY INTRO */}
@@ -50,7 +55,10 @@ export default function Home() {
                 <Link to="/about" className="btn btn--secondary" title="Learn more about Uniwise Global Solutions company background">About Our Company</Link>
               </div>
               <div className="two-col__image">
-                <span>Company Photo Placeholder (720 x 540)</span>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/images/company-photo.png`}
+                  alt="Uniwise Global Solutions team collaborating"
+                />
               </div>
             </div>
           </FadeUp>

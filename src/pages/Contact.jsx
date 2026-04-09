@@ -39,7 +39,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us | Uniwise Global Solutions - Customer Service Center Malaysia"
-        description="Contact Uniwise Global Solutions Sdn. Bhd. for customer service center solutions, administrative support, and IT services in Malaysia. Free consultation available. Email: info@uniwiseglobal.com. Based in Kuala Lumpur."
+        description="Contact Uniwise Global Solutions Sdn. Bhd. for customer service center solutions, administrative support, and IT services in Malaysia. Free consultation available. Email: leebinglin2@gmail.com. Based in Kuala Lumpur."
         keywords="contact Uniwise Global Solutions, customer service consultation Malaysia, business support inquiry, call center solutions contact, BPO Malaysia contact, customer service outsourcing quote, free consultation business support, Kuala Lumpur business services"
         path="/contact"
         schema={contactSchema}
@@ -131,19 +131,8 @@ export default function Contact() {
                   </div>
                   <div className="contact-info__text">
                     <h4>Email</h4>
-                    <p><a href="mailto:info@uniwiseglobal.com" title="Email Uniwise Global Solutions for business inquiries">info@uniwiseglobal.com</a></p>
+                    <p><a href="mailto:leebinglin2@gmail.com" title="Email Uniwise Global Solutions for business inquiries">leebinglin2@gmail.com</a></p>
                     <p>We reply to emails within 1 business day.</p>
-                  </div>
-                </div>
-
-                <div className="contact-info__item">
-                  <div className="contact-info__icon" aria-hidden="true">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                  </div>
-                  <div className="contact-info__text">
-                    <h4>Phone</h4>
-                    <p><a href="tel:+60000000000" title="Call Uniwise Global Solutions">+60 00-000 0000</a></p>
-                    <p>Monday to Friday, 9:00 AM to 6:00 PM (MYT)</p>
                   </div>
                 </div>
 
@@ -192,8 +181,8 @@ export default function Contact() {
         description="Our team will get back to you within 1 business day after receiving your message. We are ready to discuss your specific business needs."
         primaryText="Email Directly"
         primaryLink="/contact"
-        secondaryText="Call Now"
-        secondaryLink="tel:+60000000000"
+        secondaryText="Contact Us"
+        secondaryLink="/contact"
       />
     </>
   )
