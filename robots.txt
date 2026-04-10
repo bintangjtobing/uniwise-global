@@ -3,8 +3,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /admin/
 
 # Sitemaps
 Sitemap: https://www.uniwiseglobal.com/sitemap.xml
