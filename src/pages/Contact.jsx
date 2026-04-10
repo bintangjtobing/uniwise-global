@@ -12,16 +12,41 @@ function FadeUp({ children, className = '' }) {
 export default function Contact() {
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState('')
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
     setSending(true)
-    setTimeout(() => {
-      setSending(false)
+    setError('')
+
+    const form = e.target
+    const data = {
+      firstName: form.firstName.value,
+      lastName: form.lastName.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      company: form.company.value,
+      service: form.service.value,
+      message: form.message.value,
+    }
+
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+
+      if (!res.ok) throw new Error('Failed to send')
+
       setSent(true)
-      e.target.reset()
-      setTimeout(() => setSent(false), 3000)
-    }, 1000)
+      form.reset()
+      setTimeout(() => setSent(false), 4000)
+    } catch {
+      setError('Failed to send message. Please try again or email us directly.')
+    } finally {
+      setSending(false)
+    }
   }
 
   const contactSchema = {
@@ -39,7 +64,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us | Uniwise Global Solutions - Customer Service Center Malaysia"
-        description="Contact Uniwise Global Solutions Sdn. Bhd. for customer service center solutions, administrative support, and IT services in Malaysia. Free consultation available. Email: leebinglin2@gmail.com. Based in Kuala Lumpur."
+        description="Contact Uniwise Global Solutions Sdn. Bhd. for customer service center solutions, administrative support, and IT services in Malaysia. Free consultation available. Email: business@uniwise.my. Based in Kuala Lumpur."
         keywords="contact Uniwise Global Solutions, customer service consultation Malaysia, business support inquiry, call center solutions contact, BPO Malaysia contact, customer service outsourcing quote, free consultation business support, Kuala Lumpur business services"
         path="/contact"
         schema={contactSchema}
@@ -115,6 +140,7 @@ export default function Contact() {
                   >
                     {sending ? 'Sending...' : sent ? 'Message Sent!' : 'Send Message'}
                   </button>
+                  {error && <p style={{ color: '#ef4444', marginTop: 'var(--space-3)', fontSize: 'var(--text-sm)' }}>{error}</p>}
                 </form>
               </div>
 
@@ -131,7 +157,7 @@ export default function Contact() {
                   </div>
                   <div className="contact-info__text">
                     <h4>Email</h4>
-                    <p><a href="mailto:leebinglin2@gmail.com" title="Email Uniwise Global Solutions for business inquiries">leebinglin2@gmail.com</a></p>
+                    <p><a href="mailto:business@uniwise.my" title="Email Uniwise Global Solutions for business inquiries">business@uniwise.my</a></p>
                     <p>We reply to emails within 1 business day.</p>
                   </div>
                 </div>
@@ -143,7 +169,6 @@ export default function Contact() {
                   <div className="contact-info__text">
                     <h4>Office Address</h4>
                     <p>Kuala Lumpur, Malaysia</p>
-                    <p>[Full address to be added]</p>
                   </div>
                 </div>
 
@@ -164,23 +189,12 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* MAP */}
-      <section className="section section--sm section--bg">
-        <div className="container">
-          <FadeUp>
-            <div className="map-placeholder">
-              <span>Google Maps Embed Placeholder</span>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
-
       {/* CTA */}
       <CTABanner
         title="Fast Response for Every Inquiry"
         description="Our team will get back to you within 1 business day after receiving your message. We are ready to discuss your specific business needs."
         primaryText="Email Directly"
-        primaryLink="/contact"
+        primaryLink="mailto:business@uniwise.my"
         secondaryText="Contact Us"
         secondaryLink="/contact"
       />

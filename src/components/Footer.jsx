@@ -36,14 +36,13 @@ export default function Footer() {
           <div className="footer__col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="mailto:leebinglin2@gmail.com" title="Email Uniwise Global Solutions">leebinglin2@gmail.com</a></li>
+              <li><a href="mailto:business@uniwise.my" title="Email Uniwise Global Solutions">business@uniwise.my</a></li>
               <li><span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem' }}>Kuala Lumpur, Malaysia</span></li>
             </ul>
           </div>
         </div>
         <div className="footer__bottom">
           <span>&copy; 2026 Uniwise Global Solutions Sdn. Bhd. All rights reserved.</span>
-          <span>SSM Registration No: [Your Registration Number]</span>
         </div>
       </div>
     </footer>
