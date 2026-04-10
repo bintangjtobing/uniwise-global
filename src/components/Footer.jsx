@@ -37,7 +37,6 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul>
               <li><a href="mailto:business@uniwise.my" title="Email Uniwise Global Solutions">business@uniwise.my</a></li>
-              <li><span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem' }}>Kuala Lumpur, Malaysia</span></li>
             </ul>
           </div>
         </div>

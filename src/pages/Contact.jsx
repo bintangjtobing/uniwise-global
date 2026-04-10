@@ -162,16 +162,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="contact-info__item">
-                  <div className="contact-info__icon" aria-hidden="true">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  </div>
-                  <div className="contact-info__text">
-                    <h4>Office Address</h4>
-                    <p>Kuala Lumpur, Malaysia</p>
-                  </div>
-                </div>
-
                 <div className="contact-hours">
                   <h4>Operating Hours</h4>
                   <table>
