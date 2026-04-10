@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import useScrollAnimation from '../components/useScrollAnimation'
 import FeatureCard from '../components/FeatureCard'
 import CTABanner from '../components/CTABanner'
-import SEO, { serviceSchema, breadcrumbSchema } from '../components/SEO'
+import SEO, { serviceSchema, breadcrumbSchema, faqSchema } from '../components/SEO'
 
 function FadeUp({ children, className = '' }) {
   const ref = useScrollAnimation()
@@ -41,6 +41,28 @@ export default function Services() {
       breadcrumbSchema([
         { name: 'Home', url: '/' },
         { name: 'Services' },
+      ]),
+      faqSchema([
+        {
+          question: 'What services does Uniwise Global Solutions offer?',
+          answer: 'Uniwise offers three core services: Customer Service Center Operations (inbound calls, live chat, email support), Office Administrative Support (data entry, document management, scheduling), and IT Service & Technical Support (help desk, troubleshooting, system monitoring).',
+        },
+        {
+          question: 'How long does it take to onboard a new customer service team?',
+          answer: 'Our average onboarding time is 2 weeks. During this period, we recruit agents that match your business profile and train them on your products, brand voice, and procedures.',
+        },
+        {
+          question: 'Can I scale my team up or down based on demand?',
+          answer: 'Yes. Our service model is fully scalable. You can increase or decrease team size based on your actual volume, such as scaling from 5 agents to 20+ during peak seasons, with no long-term lock-in.',
+        },
+        {
+          question: 'Do your agents work exclusively for my business?',
+          answer: 'Yes. Every agent assigned to your account is dedicated to your business. They are trained specifically on your products, brand guidelines, and customer service procedures.',
+        },
+        {
+          question: 'What industries do you serve?',
+          answer: 'We serve businesses across industries including e-commerce, technology/SaaS, logistics, and any business that needs customer service, administrative, or IT support outsourcing in Malaysia and Southeast Asia.',
+        },
       ]),
     ],
   }

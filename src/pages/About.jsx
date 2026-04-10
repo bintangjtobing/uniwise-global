@@ -51,6 +51,9 @@ export default function About() {
                 <img
                   src={`${import.meta.env.BASE_URL}assets/images/company-photo.png`}
                   alt="Uniwise Global Solutions team collaborating"
+                  width="600"
+                  height="400"
+                  loading="lazy"
                 />
               </div>
             </div>

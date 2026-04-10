@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 const SITE_URL = 'https://www.uniwiseglobal.com'
 const SITE_NAME = 'Uniwise Global Solutions Sdn. Bhd.'
-const DEFAULT_IMAGE = `${SITE_URL}/assets/images/og-image.png`
+const DEFAULT_IMAGE = `${SITE_URL}/assets/images/og-image.jpg`
 
 export default function SEO({
   title,
@@ -111,7 +111,6 @@ export const organizationSchema = {
     email: 'business@uniwise.my',
     availableLanguage: ['English', 'Malay'],
   },
-  sameAs: [],
   serviceArea: {
     '@type': 'Country',
     name: 'Malaysia',
@@ -124,7 +123,6 @@ export const localBusinessSchema = {
   name: 'Uniwise Global Solutions Sdn. Bhd.',
   image: `${SITE_URL}/assets/images/logo-light.png`,
   url: SITE_URL,
-  telephone: '+60-00-000-0000',
   email: 'business@uniwise.my',
   address: {
     '@type': 'PostalAddress',

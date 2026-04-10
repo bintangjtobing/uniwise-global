@@ -20,6 +20,8 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          PUPPETEER_CACHE_DIR: /home/runner/.cache/puppeteer
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
